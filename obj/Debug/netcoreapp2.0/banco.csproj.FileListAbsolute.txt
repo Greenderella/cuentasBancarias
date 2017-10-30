@@ -1,0 +1,10 @@
+C:\Ejercicios\banco\cuentasBancarias\bin\Debug\netcoreapp2.0\banco.deps.json
+C:\Ejercicios\banco\cuentasBancarias\bin\Debug\netcoreapp2.0\banco.runtimeconfig.json
+C:\Ejercicios\banco\cuentasBancarias\bin\Debug\netcoreapp2.0\banco.runtimeconfig.dev.json
+C:\Ejercicios\banco\cuentasBancarias\bin\Debug\netcoreapp2.0\banco.dll
+C:\Ejercicios\banco\cuentasBancarias\bin\Debug\netcoreapp2.0\banco.pdb
+C:\Ejercicios\banco\cuentasBancarias\obj\Debug\netcoreapp2.0\banco.csproj.CoreCompileInputs.cache
+C:\Ejercicios\banco\cuentasBancarias\obj\Debug\netcoreapp2.0\banco.AssemblyInfoInputs.cache
+C:\Ejercicios\banco\cuentasBancarias\obj\Debug\netcoreapp2.0\banco.AssemblyInfo.cs
+C:\Ejercicios\banco\cuentasBancarias\obj\Debug\netcoreapp2.0\banco.dll
+C:\Ejercicios\banco\cuentasBancarias\obj\Debug\netcoreapp2.0\banco.pdb
