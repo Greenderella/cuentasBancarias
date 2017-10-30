@@ -1,47 +1,48 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace banco
 {
     /// <summary>
     /// Clase Cuenta
     /// </summary>
-    
     public class Cuenta
     {
-        //las clases que creamos son tipos de datos nuevos
-        public Cliente Titular { get; set; }
+        public List<Cliente> Titulares { get; set; }
         public long NumeroCuenta { get; set; }
         public decimal Saldo { get; set; }
+
+        /// <summary>
+        /// Constructor que recibe parámetro
+        /// </summary>
+        /// <param name="numero">Numero de Cuenta</param>
+        /// 
+        public Cuenta(long numero)
+        {
+            this.NumeroCuenta = numero;
+            this.Saldo = 0;
+            this.Titulares = new List<Cliente>();
+        }
 
         /// <summary>
         /// Metodo para retirar dinero, no es void por que nos retorna un saldo restante tras la extraccion
         /// </summary>
         /// <param name="cantidadARetirar">Suma de dinero a retirar, por lo que es un decimal</param>
         /// <returns>Saldo restante</returns>
-        
-        public bool RetirarDinero(decimal cantidadARetirar)
+        public bool RetirarDinero(decimal cantidad)        
         {
-            if (Saldo >= cantidadARetirar)
+            if(Saldo >= cantidad)
             {
-                this.Saldo -= cantidadARetirar;
+                this.Saldo -= cantidad; // this.Saldo = this.Saldo - cantidad;
                 return true;
             }
-            else 
-            {
-                return false;
-            }  
+            return false;
         }
 
-        /// <summary>
-        /// Metodo para depositar dinero
-        /// </summary>
-        /// <param name="cantidadADepositar">Suma de dinero a depositar</param>
-        /// <returns>Saldo actualizado</returns>
-        
-        public decimal DepositarDinero(decimal cantidadADepositar)
+        public bool DepositarDinero(decimal cantidad)
         {
-            this.Saldo += cantidadADepositar;
-            return this.Saldo;
+            this.Saldo += cantidad;
+            return true;
         }
     }
 }
